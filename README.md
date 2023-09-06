@@ -13,6 +13,10 @@
 </div>
 
 
+### Installation options
+1. Download from https://github.com/hack-ink/telegram-webhook/releases.
+2. Clone the repository and execute `cargo build --release`.
+
 ### Usage
 ```
 ### A webhook server can forward messages from a source to Telegram chat(s).
