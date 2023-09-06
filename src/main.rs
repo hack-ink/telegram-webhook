@@ -43,7 +43,7 @@ async fn main() -> Result<()> {
 )]
 struct Cli {
 	/// Port to listen on.
-	#[arg(long, short, value_name = "PORT", default_value = "8080")]
+	#[arg(long, short, value_name = "PORT", default_value_t = 8080)]
 	port: u16,
 	/// Telegram chat ID.
 	#[arg(

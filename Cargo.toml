@@ -1,7 +1,7 @@
 [package]
 authors     = ["Xavier Lau <xavier@inv.cafe>"]
 build       = "build.rs"
-description = "A webhook server can forward messages from a source to Telegram channel(s)."
+description = "A webhook server can forward messages from a source to Telegram chat(s)."
 edition     = "2021"
 homepage    = "https://telegram-webhook.hack.ink"
 license     = "GPL-3.0"
@@ -23,9 +23,9 @@ lto      = true
 vergen = { version = "8.2", features = ["build", "cargo", "git", "gitcl"] }
 
 [dependencies]
-actix-web          = { version = "4.3" }
+actix-web          = { version = "4.4" }
 anyhow             = { version = "1.0" }
-clap               = { version = "4.3", features = ["derive"] }
+clap               = { version = "4.4", features = ["derive"] }
 color-eyre         = { version = "0.6" }
 teloxide           = { version = "0.12" }
 tracing            = { version = "0.1" }

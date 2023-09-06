@@ -1,7 +1,7 @@
 <div align="center">
 
 # Telegram Webhook
-### A webhook server can forward messages from a source to Telegram channel(s).
+### A webhook server can forward messages from a source to Telegram chat(s).
 
 [![License](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Checks](https://github.com/hack-ink/telegram-webhook/actions/workflows/checks.yml/badge.svg?branch=main)](https://github.com/hack-ink/telegram-webhook/actions/workflows/checks.yml)
@@ -15,7 +15,7 @@
 
 ### Usage
 ```
-A server can forward messages from a webhook to a Telegram channel.
+### A webhook server can forward messages from a source to Telegram chat(s).
 
 Usage: telegram-webhook [OPTIONS] --chat-id <ID>
 
@@ -26,7 +26,11 @@ Options:
   -V, --version       Print version
 ```
 
-#### Set the bot token use:
+#### Set the bot token
 ```
 export BOT_TOKEN=the-token-that-you-got-from-the-telegram-bot-father
 ```
+
+#### How to obtain the chat ID
+1. Search for the bot @rwa_data_bot on Telegram and start a conversation with it by sending `/start`.
+2. Tap on the `Chat` button and choose the specific chat you wish to retrieve the ID for.
