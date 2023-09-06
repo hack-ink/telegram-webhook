@@ -15,7 +15,8 @@
 
 ### Installation options
 1. Download from https://github.com/hack-ink/telegram-webhook/releases.
-2. Clone the repository and execute `cargo build --release`.
+2. Install from crates.io `cargo install telegram-webhook`.
+3. Clone the repository and execute `cargo build --release`.
 
 ### Usage
 ```
