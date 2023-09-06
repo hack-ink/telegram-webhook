@@ -1,15 +1,32 @@
 [package]
 authors     = ["Xavier Lau <xavier@inv.cafe>"]
-# build       = "build.rs"
-description = "<DESCRIPTION>"
+build       = "build.rs"
+description = "A webhook server can forward messages from a source to Telegram chat(s)."
 edition     = "2021"
-homepage    = "https://<NAME>.hack.ink"
+homepage    = "https://telegram-webhook.hack.ink"
 license     = "GPL-3.0"
-name        = "<NAME>"
+name        = "telegram-webhook"
 readme      = "README.md"
-repository  = "https://github.com/hack-ink/<NAME>"
+repository  = "https://github.com/hack-ink/telegram-webhook"
 version     = "0.1.0"
 
-# [build-dependencies]
-# # crates.io
-# vergen = { version = "8.2", features = ["build", "cargo", "git", "gitcl"] }
+[profile.ci-dev]
+incremental = false
+inherits    = "dev"
+
+[profile.ci-release]
+inherits = "release"
+lto      = true
+
+[build-dependencies]
+# crates.io
+vergen = { version = "8.2", features = ["build", "cargo", "git", "gitcl"] }
+
+[dependencies]
+actix-web          = { version = "4.4" }
+anyhow             = { version = "1.0" }
+clap               = { version = "4.4", features = ["derive"] }
+color-eyre         = { version = "0.6" }
+teloxide           = { version = "0.12" }
+tracing            = { version = "0.1" }
+tracing-subscriber = { version = "0.3" }
