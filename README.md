@@ -37,5 +37,5 @@ export BOT_TOKEN=the-token-that-you-got-from-the-telegram-bot-father
 ```
 
 #### How to obtain the chat ID
-1. Search for the bot @rwa_data_bot on Telegram and start a conversation with it by sending `/start`.
+1. Search for the bot @raw_data_bot on Telegram and start a conversation with it by sending `/start`.
 2. Tap on the `Chat` button and choose the specific chat you wish to retrieve the ID for.
